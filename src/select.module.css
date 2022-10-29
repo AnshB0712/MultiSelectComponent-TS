@@ -1,0 +1,101 @@
+.container{
+  position: relative;
+  
+  border: 1px solid #777;
+  border-radius: .5rem;
+  
+  padding:  .5rem 1rem;
+  margin: 0 auto;
+  
+  min-height: 1.5rem;
+  max-width: 310px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.options{
+  position: absolute;
+  top: calc(100% + .5rem);
+  left: 0;
+  right: 0;
+  
+  border: 1px solid #444;
+  border-radius: inherit;
+  
+  margin: 0; padding: .5rem;
+  
+  list-style: none;
+  
+  max-height: 15rem;
+  overflow: auto;
+  
+  display: none;
+  
+  background: #242424;
+  z-index: 5;
+}
+
+.show{
+  display: block;
+}
+
+.clear-btn{
+  border-radius: 50%;
+  border: none;
+}
+
+.divider{
+  width: .01rem;
+  background: #fff;
+  align-self: stretch;
+  margin: 0 1rem;
+}
+
+.caret{
+  border: .25rem solid transparent;
+  border-top-color: #777;
+  transform: translate(0,25%);
+}
+
+.option{
+  border: 1px solid #444;
+  border-radius: inherit;
+  
+  padding: .5rem .75rem;
+  margin: .5rem 0;
+
+  max-width: 100%;
+  
+  transition: background-color .25s ease;
+}
+.option:first-child{
+  margin-top: 0;
+}
+.option:last-child{
+  margin-bottom: 0;
+}
+.option:hover{
+  background: rgb(255,190,11);
+  color: #fff;
+}
+.option.selected{
+  background: #b878f1;
+  color: #fff;
+}
+
+.value{
+  flex-grow: 1;
+}
+
+.option-badge{
+  padding: .25rem 1rem;
+  margin: .15rem .25rem;
+  border: 1px solid #b878f1;
+  border-radius: 1rem;
+  background: transparent;
+}
+.remove-btn{
+  display: inline-block;
+  margin-left: .75rem;
+}
